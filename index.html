@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">aadya dewangan</div>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#achievements">achievements</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">aadya dewangan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">about</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+          <li><a href="#achievements" onclick="toggleMenu()">achievements</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-1.png" alt="aadya's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">hello, i'm</p>
+        <h1 class="title">aadya dewangan</h1>
+        <p class="section__text__p2">data scientist in the making</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/aadya_resume.pdf')"
+          >
+            download cv
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            contact info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="my linked-in profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/aadya-dewangan-6a76a0225/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="my github profile"
+            class="icon"
+            onclick="window.open('https://github.com/aadya-here/')"
+          />
+          <img
+            src="./assets/medium.png"
+            alt="my medium profile"
+            class="icon"
+            onclick="window.open('https://medium.com/@aadyaxdewangan')"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">get to know more</p>
+      <h1 class="title">about me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/me3.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>experience</h3>
+              <p>nan <br />aadya dewangan</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>education</h3>
+              <p>bachelor of technology<br />civil engineering (cgpa : 8.13)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              i really love finding and creating solutions. with the vast 
+              amounts of data available today, what better to tackle problems than machine learning 
+              and data science?i also enjoy learning about businesses and their operations.
+              <br>
+              additionally, i also like to read books, practice photography and explore my culinary skills 
+              in my free time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">explore my</p>
+      <h1 class="title">skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">machine learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>scikit-learn</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>tensorflow & pytorch</h3>
+                  <p>beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>natural language processing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>computer vision</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+            </div>
+          </div> 
+
+          <br>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">data analytics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>tableau</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>numpy and pandas</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>excel</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>creating presentations</h3>
+                  <p>advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+
+          <br>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">front-end web development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>html</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>css</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>flask</h3>
+                  <p>intermediate</p>
+                </div>
+              </article>
+             
+            </div>
+          </div>
+
+          <br>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>python</h3>
+                  <p>intermdiate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>c++</h3>
+                  <p>intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>sql</h3>
+                  <p>intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>java script</h3>
+                  <p>beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+  
+
+   
+    <section id="projects">
+      <p class="section__text__p1">browse my recent</p>
+      <h1 class="title">projects</h1>
+      <div class="experience-details-container">
+        <h2 class="projects-sub-title">machine learning & frontend web development</h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sign_lang.png"
+                alt="sign language detection"
+                class="project-img"
+                
+              />
+            </div>
+            <h2 class="projects-title">sign language detection | computer vision</h2>
+            <p class="projects-description">this was a subpart of a bigger project made to help those with special abilities during smart india hackathon 2023</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('sign_lang.html')"
+              >
+                view project
+              </button>
+    
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nlp.jpg"
+                alt="natural language processing"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">100 days of nlp</h2>
+            <p class="projects-description">this is my present ongoing project, where i delve into nlp and document it on medium</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://medium.com/@aadyaxdewangan')"
+              >
+                view my medium page
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ttt.jpg"
+                alt="tic tac toe"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">tic tac toe</h2>
+            <p class="projects-description">this is a simple tic tac toe game made using html, css, and javascript</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://tic-tac-toe-pro-mlbx.vercel.app/')"
+              >
+                view game
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/aadya-here/Tic-Tac-Toe-Pro')"
+              >
+                view repo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="experience-details-container">
+          <h2 class="projects-sub-title">case studies & data analytics  </h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dashboard.png"
+                alt="project 1"
+                class="project-img"
+                
+              />
+            </div>
+            <h2 class="projects-title">dashboard using sql + tableau</h2>
+            <p class="projects-description">this dashboard illustrates the sales data of a new pizzeria</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('dashboard.html')"
+              >
+                view dashboard
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/netflix.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="projects-title">netflix's marketing case study</h2>
+            <p class="projects-description">this deck illustrates the various marketing strategies employed by netflix</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.linkedin.com/posts/aadya-dewangan-6a76a0225_netflixs-multifaceted-marketing-success-activity-7111936982825504768-t8zG?utm_source=share&utm_medium=member_desktop')"
+              >
+                view case study
+              </button>
+        
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/decathlon.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="projects-title">deck for a new idea for decathlon</h2>
+            <p class="projects-description">this deck illustrates how decathlon can introduce something new  in the market to improve one's physical health. </p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.linkedin.com/posts/aadya-dewangan-6a76a0225_idea-concept-for-decathlon-d-sports-link-activity-7124731806968406016-N4Eb?utm_source=share&utm_medium=member_desktop')"
+
+              >
+                view case study
+              </button>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-details-container">
+        <h2 class="projects-sub-title">civil engineering</h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/civil-1.jpg"
+                alt="project 1"
+                class="project-img"
+                
+              />
+            </div>
+            <h2 class="projects-title ">soil strength using arduino</h2>
+            <p class="projects-description">incorporated an ultrasonic distance module linked to an arduino into the conventional
+              unconfined compression strength (ucs) test</p><br>
+            <div class="btn-container">  
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Geotech Lab Project.pdf')"
+              >
+                project report
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/civil-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="projects-title ">structural insights</h2>
+            <p class="projects-description">researched on various ways to increase digitization 
+              in civil engineering and built a cnn model to identify cracks in concrete</p><br>
+            <div class="btn-container">  
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Women of Mettle.pdf')"
+              >
+                project presentation
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/civil-3.png"
+                alt="project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="projects-title">underground metros & tunneling </h2>
+            <p class="projects-description">researched on various tunneling methods for underground metros</p><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Metro & Tunnelling.pdf')"
+              >
+                project presentation
+              </button>
+            </div>
+          </div>
+        </div>
+        </h2>
+      </div>
+  
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#achievments'"
+      />
+
+     </section>
+
+    <section id="achievements">
+      <p class="section__text__p1">explore my</p>
+      <h1 class="title">achievements & hobbies</h1>
+      <div class="experience-details-container">
+        <!-- <div class="about-containers"> -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">achievements</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/medal.png"
+                  alt="medal icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>team leader in smart india hacathon grand finale 2023</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/medal.png"
+                  alt="medal icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>student internship representative </h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/medal.png"
+                  alt="medal icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>shortlisted in top 50 in tata steel's women of mettle 2023</h3>
+                  <p></p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/medal.png"
+                  alt="medal icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>got A in data structures & algorithms course (top 20%) of cohort</h3>
+                  <p></p>
+                </div>
+              </article>
+
+            </div>
+          </div> 
+
+          <br>
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">hobbies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/camera.png"
+                  alt="camera icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>photography</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/airplane.png"
+                  alt="airplane icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>travelling</h3>
+                  <p></p>
+                </div>
+              </article>
+        
+              <article>
+                <img
+                  src="./assets/creativity.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>digital art & design</h3>
+                  <p></p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/book.png"
+                  alt="book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>reading</h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          <!-- </div>            -->
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">get in touch</p>
+      <h1 class="title">contact me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aadyaxdewangan@gmail.com">aadyaxdewangan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aadya-dewangan-6a76a0225/">linkedin</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#achievements">achievements</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; aadya dewangan. all rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

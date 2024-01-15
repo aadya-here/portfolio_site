@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign language detection</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="proj_style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">aadya dewangan</a></div>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+              <div class="dropdown">
+                <button class="dropbtn" style = "font-size: 1.4rem;">contact me</button>
+                <div class="dropdown-content" style = "font-size: 1.3rem">
+                  <a href = "mailto: aadyaxdewangan@gmail.com">email</a>
+                    <a href="https://www.linkedin.com/in/aadya-dewangan-6a76a0225/">linkedin</a>
+                  <a href="tel:+91 7349636009">call +91 7349636009</a>
+
+
+                </div>
+              </div>
+
+          </ul>
+        </div>
+      </nav>
+      <<nav id="hamburger-nav">
+        <div class="logo"><a href="/index.html" onclick="toggleMenu()">aadya dewangan</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li onclick="toggleMenu()"><a href="mailto: aadyaxdewangan@gmail.com">email</a></li>
+                    <li onclick="toggleMenu()"><a href="https://www.linkedin.com/in/aadya-dewangan-6a76a0225/">linkedin</a></li>
+                    <li onclick="toggleMenu()"><a href="tel:+91 7349636009">call +91 7349636009</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <div class="tabs-container">
+        <div class="tabs">
+          <div class="tab active">about project</div>
+          <div class="tab">tech stack</div>
+          <div class="tab">implementation</div>
+          <div class="tab">challenges</div>
+          <div class="tab"> key takeaways</div>
+          <div class="tab">links</div>
+        </div>
+  
+        <div class="content-container">
+          <div class="content active">
+            <h3>about project</h3>
+            <br>
+            <p>
+                individuals with hearing and speaking issues face communication barriers,
+                both in real life and even more so during digital interactions like video calls.
+                present solutions offer real-time captions but fall short for those who rely on sign language.
+            </p>
+          </div>
+  
+          <div class="content">
+            <h3>tech stack</h3>
+            <br>
+            <p>
+                <ul style = "padding-left: 2rem">
+                <li>tensorflow (keras)</li>
+                <br>
+                <li> open cv</li>
+                <br>
+                <li>mediapipe library</li>
+
+                  </ul>
+             
+            </p>
+          </div>
+  
+          <div class="content">
+            <h3>implementation</h3>
+            <br>
+            <p>
+            open cv works on static images and hence is not fully suitable for this purpose.
+            google's media pipe library is the perfect for this as sign language
+            is a mixture of both gestures and facial  movements and the library can track both.
+            however, it is a heavy library, and it may not be feasible to run an end to end application using it.
+              
+            </p>
+          </div>
+  
+          <div class="content">
+            <h3>challenges</h3>
+            <br>
+            <p>
+                <ul style = "padding-left: 2rem">
+
+                    <li>lack of good data available</li>
+                    <br>
+                    <li>model is not easy to train and requires significant resouces on scaling</li>
+                    <br>
+                    <li>requires regular feedback from someone with hearing or speaking impairments for improvements to ensure application is actually useful</li>
+    
+                </ul>
+            </p>
+          </div>
+
+          <div class="content">
+            <h3>key takeaways</h3>
+            <p>
+                <ul style = "padding-left: 2rem">
+
+                    <li>developed an understanding of problems that might not directly affect me</li>
+                    <br>
+                    <li>learned computer vision from this project</li>
+                    <br>
+                    <li>learned how to apply lstm neural networks in the field of computer vision</li>
+    
+                </ul>
+              
+            </p>
+          </div>
+  
+          <div class="content">
+            <h3>links & demo </h3>
+            <p>
+              <img
+            src="./assets/github.png"
+            alt="my project on git hub profile"
+            class="icon"
+            onclick="window.open('https://github.com/aadya-here/sign_language_detection')"
+          />
+          <img
+            src="./assets/docs.png"
+            alt="my documentation of the project"
+            class="icon"
+            onclick="window.open('./assets/Sign Language Detection.pdf')"
+          />
+          <video width="500" height="270" controls>
+            <source src="./assets/sing_lang_vid.mp4" type="video/mp4">
+            your browser does not support the video tag.
+        </video>
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <script src="proj_main.js"></script>
+
+</body>
+</html>
